@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "files": [
+        "app/app.module.ts",
+        "app/app.route.ts",
+        "app/DocDispatchUI/controllers/search.ts",
+        "app/DocDispatchUI/services/service.ts",
+        "app/DocDispatchUI/models/model.ts"
+    ]
+}

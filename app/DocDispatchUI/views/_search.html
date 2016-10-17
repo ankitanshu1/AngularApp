@@ -1,0 +1,23 @@
+<form ng-submit="vm.submit(vm.emailAddress)">
+<div>
+    <label>Enter email address:
+        <input type="email", id="emailAddress", name="emailAddress"
+        ng-model="vm.emailAddress" placeholder="your@email.com"
+        ng-enter="vm.submit(vm,emailAddress)">
+
+    </label>
+    <button type="submit">Check Now</button>
+</div>
+</form>
+<table>
+    <thead>
+        <tr></tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dispatchClient in vm.dispatchClient">
+            <td>{{dispatchClient.Title}}. 
+                <div ng-bind-html="dispatchClient].Description | asHtml"></div>
+            </td>
+        </tr>
+    </tbody>
+</table>

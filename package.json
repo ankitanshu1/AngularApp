@@ -1,0 +1,8 @@
+{
+     "name": "angularjs-typescript",
+     "version": "0.0.1",
+    "main": "./UI/app.js",
+    "devDependencies": {
+        
+    }
+}
