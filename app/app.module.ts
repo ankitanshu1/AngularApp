@@ -1,10 +1,10 @@
 
-/// <reference path="../typings/angularjs/angular.d.ts" />
-/// <reference path="../typings/angularjs/angular-resource.d.ts" />
-/// <reference path="../typings/angularjs/angular-route.d.ts" />
+
+import {module} from 'angular';
+
 
 module  DocDispatchUi{
     "use strict"
 
-    angular.module("DocDispatchUi",["ngRoute"])
+    angular.module("DocDispatchUi",["ngRoute"]);
 }

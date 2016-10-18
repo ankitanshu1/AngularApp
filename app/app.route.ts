@@ -7,9 +7,10 @@
  module  DocDispatchUi{
      "use strict";
      function routes($routeProvider: ng.route.IRouteProvider){
+         routes.$inject=["$routeProvider"]
     $routeProvider
-    .when("/search",{
-        templateUrl:"/UI/DocDipatch/views/_search.html",
+    .when("/search",{        
+        templateUrl:"/DocDispatchUI/views/_search.html",
         controller:"SearchController",
         controllerAs:"vm"
     })
@@ -17,7 +18,7 @@
         redirectTo:"/search"})
      }
 
-     routes.$inject=["$routeProvider"]
+     
 
      angular.module("DocDispatchUi")
      .config(routes);

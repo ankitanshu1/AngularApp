@@ -8,15 +8,20 @@ module DocDispatchUi{
         check(address:string) : ng.IPromise<{}>;
     }
 
-    class DispatchService implements IDispatchService{
+     class DispatchService implements IDispatchService{
         static $inject = ["http"];
         constructor(private $http : ng.IHttpService){
-
+                
         }
       check(address:string) : ng.IPromise<{}>{
-return this.$http.get("");
+//console.log(this.$http.get("https://haveibeenpwned.com/api/v2/breachedaccount/" + address));
+var test = this.$http.get("https://haveibeenpwned.com/api/v2/breachedaccount/" + address);
+return test;
+ 
         }
     }
+
+    angular.module("DocDispatchUi").service("dispatchService",['$http',DispatchService]);
 
 
 }

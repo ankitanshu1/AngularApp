@@ -1,8 +1,13 @@
 {
-     "name": "angularjs-typescript",
-     "version": "0.0.1",
-    "main": "./UI/app.js",
-    "devDependencies": {
-        
-    }
+  "name": "angularapp",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Angular js App DDS",  
+  "devDependencies": {
+    
+  },
+  "scripts": {    
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"    
+  }
 }

@@ -11,6 +11,8 @@
         "app/app.route.ts",
         "app/DocDispatchUI/controllers/search.ts",
         "app/DocDispatchUI/services/service.ts",
-        "app/DocDispatchUI/models/model.ts"
+        "app/DocDispatchUI/models/model.ts",
+        "app/DocDispatchUI/filters/asHtml.filter.ts",
+        "app/DocDispatchUI/directives/search.directive.ts"
     ]
 }
